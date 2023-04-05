@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+
+}
+/* remove margin and padding from ul */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* style my list */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: .2s;
+    /* make li un copyable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -user-select: none;
+}
+
+/*add ood/even colors to the list */
+ul li:nth-child(odd){
+    background: #a646ff;
+}
+
+ul li:hover{
+    background: white;
+}
+
+ul li.checked::before{
+    content:'';
+    position: absolute;
+    border-color: #54e954;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 10px;
+    transform:rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.close:hover {
+    background-color: red;
+    color: white;
+}
+.header {
+    padding: 30px 40px;
+    background-color: #d2a3ff;
+    color: whitesmoke;
+    text-align: center;
+}
+input{
+    margin: 0;
+    border: none;
+    border-radius: 7px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-color: white;
+}
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: white;
+    color: #d2a3ff;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 6px;
+}
+
+.header:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.addBtn:hover {
+    background-color: #d2a3ff;
+    color:white;
+}
