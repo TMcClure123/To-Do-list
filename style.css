@@ -45,7 +45,9 @@ ul li.checked::before{
     height: 15px;
     width: 7px;
 }
-
+.font{
+    font-family: 'Amatic SC', cursive;
+}
 .close{
     position: absolute;
     right: 0;
@@ -61,6 +63,7 @@ ul li.checked::before{
     background-color: #d2a3ff;
     color: whitesmoke;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
 }
 input{
     margin: 0;
